@@ -10,7 +10,15 @@
 </head>
 <body>
   <div id="app">
-    
+    <section class="produtos">
+      <div v-for="produto in produtos" :key="produto.id" class="produto">
+        <img :src="produto.img" :alt="produto.nome" class="produto.img" />
+        <div class="produto_info">
+          <span class="produto_preco">{{produto.preco}}</span>
+          <h2 class="produto_titulo">{{produto.nome}}</h2>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="./app.js"></script>
