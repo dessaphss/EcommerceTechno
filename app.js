@@ -11,5 +11,9 @@ const vm = new Vue ({
         this.produtos = r;
       })
     }
-  }
+  },
+    //ao criar o vue.js esse método será ativado
+    created(){
+      this.fetchProdutos();
+    }
 });
